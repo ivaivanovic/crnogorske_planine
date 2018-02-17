@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="sr">
+  <head>
+    <!-- Neophodni meta tagovi -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Ostali meta tagovi-->
+    <meta name="description" content="Sajt o crnogorskim planinama">
+    <meta name="keywords" content="crnogorske planine, Crna Gora, planine">
+    <meta name="author" content="Iva Ivanović">
+    <meta name="author" content="Nina Femić">
+
+    <link rel="shortcut icon" href="img/cg_pl_logo.ico">
+
+    <title>Dobrodošli na sajt posvećen crnogorskim planinama</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!--CSS fajl sa dodatnim stilom-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <!--jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!--Bootstrap JS-->
+    <script src="js/bootstrap.js"></script>
+
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="collapse navbar-collapse justify-content-md-start">
+        <a class="navbar-brand" href="index.html"><img src="img/cg_pl_logo.png"></a>
+          <div class="collapse navbar-collapse justify-content-md-center">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="o_nama.html">O nama</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="o_planinama.html">O crnogorskim planinama</a>
+              </li> 
+              <li class="nav-item active">
+                <a class="nav-link" href="kontakt.html">Kontakt <span class="sr-only">(current)</span></a>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </nav>
+
+    <section>
+      <div class="contact-container">
+        <div class="col-md-8">
+            <form role="form" action="mailto:ivanovic.iva1003@gmail.com" method="post">
+                <h3>Kontaktirajte nas</h3>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="ime" name="ime" placeholder="Ime i prezime">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="email" name="email" placeholder="Email">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="naslov" name="naslov" placeholder="Naslov poruke">
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" type="textarea" id="poruka" placeholder="Poruka" maxlength="200" rows="4"></textarea>                  
+                  </div>
+            
+                  <button type="submit" id="submit" name="submit" class="btn btn-primary pull-right">Pošalji</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="footer-style">&copy; Iva Ivanović &amp; Nina Femić</p>
+      </div>
+    </footer>
+  </body>
+</html>
